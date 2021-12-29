@@ -13,33 +13,39 @@
  See the License for the specific language governing permissions and
  limitations under the License.
 --><project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-
   <parent>
     <groupId>io.fd.honeycomb.common</groupId>
-    <artifactId>honeycomb-parent</artifactId>
+    <artifactId>api-parent</artifactId>
     <version>1.19.08-SNAPSHOT</version>
-    <relativePath>common/honeycomb-parent</relativePath>
   </parent>
 
-  <groupId>io.fd.honeycomb</groupId>
-  <artifactId>honeycomb-aggregator</artifactId>
-  <version>1.19.08-SNAPSHOT</version>
-  <name>honeycomb</name>
-  <packaging>pom</packaging>
   <modelVersion>4.0.0</modelVersion>
+  <groupId>org.onap.ransim</groupId>
+  <artifactId>enodebsim-api</artifactId>
+  <name>enodebsim-api</name>
+  <version>1.19.08-SNAPSHOT</version>
+  <packaging>bundle</packaging>
 
-  <description>Honeycomb project root aggregator</description>
-
-  <scm>
-    <url>https://git.fd.io/cgit/honeycomb/tree/</url>
-  </scm>
-
-  <modules>
-    <module>common</module>
-    <module>infra</module>
-    <module>samples</module>
-    <module>tools</module>
-    <module>release-notes</module>
-    <module>enodebsim</module>
-  </modules>
+  <dependencies>
+    <dependency>
+      <groupId>org.opendaylight.mdsal.model</groupId>
+      <artifactId>iana-if-type-2014-05-08</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.opendaylight.mdsal.model</groupId>
+      <artifactId>ietf-yang-types-20130715</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.opendaylight.mdsal.model</groupId>
+      <artifactId>ietf-interfaces</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.opendaylight.mdsal.model</groupId>
+      <artifactId>ietf-inet-types-2013-07-15</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.opendaylight.mdsal.model</groupId>
+      <artifactId>yang-ext</artifactId>
+    </dependency>
+  </dependencies>
 </project>
