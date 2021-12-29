@@ -123,6 +123,12 @@
 
         <dependency>
             <groupId>io.fd.honeycomb.northbound.bgp</groupId>
+            <artifactId>linkstate</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>io.fd.honeycomb.northbound.bgp</groupId>
             <artifactId>labeled-unicast</artifactId>
             <version>${project.version}</version>
         </dependency>

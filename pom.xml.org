@@ -40,6 +40,5 @@
     <module>samples</module>
     <module>tools</module>
     <module>release-notes</module>
-    <module>enodebsim</module>
   </modules>
 </project>
