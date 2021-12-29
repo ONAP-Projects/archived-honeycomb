@@ -36,6 +36,7 @@
         <module>bgp</module>
         <module>restconf</module>
         <module>netconf</module>
+        <module>bgp-extensions</module>
     </modules>
 
 </project>
